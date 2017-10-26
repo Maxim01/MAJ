@@ -1,1 +1,19 @@
-print "HELLOWORLD"
+import sys
+
+def Telechargement_MAJ():
+
+	proc = subprocess.Popen(["sudo git clone https://github.com/Maxim01/Programmes.git /home/Devismes_Bridge"], stdout=subprocess.PIPE, shell=True)
+	(out, err) = proc.communicate()
+	Data_Scan = out.splitlines()
+	print Data_Scan
+
+def main():
+	
+	print("MAIN")
+	print "SYS_VER:", (sys.version)
+	
+	Telechargement_MAJ()
+  
+if __name__ == "__main__":
+    main()
+ 
