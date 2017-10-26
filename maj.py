@@ -3,6 +3,7 @@ import subprocess
 
 def Telechargement_MAJ():
 
+	print "WORLD"
 	proc = subprocess.Popen(["sudo rm -rf Programmes"], stdout=subprocess.PIPE, shell=True)
 	(out, err) = proc.communicate()
 	Data_Scan = out.splitlines()
