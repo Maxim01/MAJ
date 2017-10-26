@@ -9,7 +9,7 @@ def Telechargement_MAJ():
 	Data_Scan = out.splitlines()
 	print Data_Scan
 	
-	proc = subprocess.Popen(["sudo git clone https://github.com/Maxim01/Programmes.git /home/Devismes_Bridge"], stdout=subprocess.PIPE, shell=True)
+	proc = subprocess.Popen(["sudo git clone https://github.com/Maxim01/Programmes.git /home/Devismes_Bridge/Programmes"], stdout=subprocess.PIPE, shell=True)
 	(out, err) = proc.communicate()
 	Data_Scan = out.splitlines()
 	print Data_Scan
