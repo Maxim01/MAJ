@@ -4,7 +4,7 @@ import subprocess
 def Telechargement_MAJ():
 
 	print "WORLD"
-	proc = subprocess.Popen(["sudo rm -rf Programmes"], stdout=subprocess.PIPE, shell=True)
+	proc = subprocess.Popen(["sudo rm -rf /home/Devismes_Bridge/Programmes"], stdout=subprocess.PIPE, shell=True)
 	(out, err) = proc.communicate()
 	Data_Scan = out.splitlines()
 	print Data_Scan
