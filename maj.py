@@ -1,1 +1,1 @@
-testmaxioio
+print "HELLOWORLD"
